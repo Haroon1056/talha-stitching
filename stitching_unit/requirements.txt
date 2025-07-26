@@ -1,30 +1,5 @@
-# Core Requirements
 Django==5.2.1
-asgiref==3.8.1
-sqlparse==0.5.3
-python-dotenv==1.1.1
-
-# Database
-psycopg2-binary==2.9.7  # For PostgreSQL (remove if using SQLite)
-
-# Static Files & Media
-whitenoise==6.5.0
-Pillow==11.3.0  # For image processing
-
-# Production
 gunicorn==21.2.0
-uvicorn==0.23.2
-
-# Security
-cryptography==45.0.4
-
-# Frontend Tools (for your Bootstrap/FontAwesome setup)
-django-compressor==4.1  # Optional for CSS/JS minification
-
-# Development Tools (remove in production)
-django-debug-toolbar==4.1.0
-django-extensions==3.2.3
-ipython==8.36.0
-
-# Email (if needed)
-django-anymail==9.0
+whitenoise==6.5.0
+psycopg2-binary==2.9.7  # For PostgreSQL
+python-dotenv==1.1.1  # For environment variables
