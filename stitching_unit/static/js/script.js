@@ -193,3 +193,7 @@ document.querySelectorAll('.footer-links a').forEach(link => {
     }
   });
 });
+
+
+
+

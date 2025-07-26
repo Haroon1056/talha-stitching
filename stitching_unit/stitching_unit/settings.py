@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'main',
+    'django_extensions',  # for useful commands
+    'debug_toolbar',  # for debugging
+    'compressor',  # for static files
 ]
 
 MIDDLEWARE = [
@@ -122,3 +125,14 @@ STATICFILES_DIRS = [BASE_DIR / "static"]
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'haroonrasheed1056@gmail.com'
+EMAIL_HOST_PASSWORD = 'uyygnqkxwojhhcdj'  # NOT your Gmail password uyyg nqkx wojh hcdj
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+CONTACT_EMAIL = 'haroonrasheed1056@gmail.com'

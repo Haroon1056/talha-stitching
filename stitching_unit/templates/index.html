@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Talha Garments Stitching</title>
+  <title>Talha Stitching Services</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -15,8 +15,8 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-dark">
   <div class="container">
     <div class="d-flex align-items-center">
-      <img src="{% static 'images/logo.png' %}" alt="Logo" class="navbar-brand-logo me-2" style="width: 40px; height: 40px;">
-      <a class="navbar-brand fw-bold" href="#home">Talha Stitching</a>
+      <img src="{% static 'images/logo1.png' %}" alt="Logo" class="navbar-brand-logo me-2" style="width: 100px; height: 100px;">
+      <a class="navbar-brand fw-bold" href="#home">Talha Stitching Services</a>
     </div>
     <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -199,7 +199,9 @@
             <i class="fas fa-clock"></i>
           </div>
           <div class="experience-content">
-            <h3 class="counter" data-target="25">0</h3>
+            <h3>
+              <span class="counter" data-target="25">0</span>+
+            </h3>
             <p>Years of Experience</p>
           </div>
         </div>
@@ -212,7 +214,9 @@
             <i class="fas fa-box-open"></i>
           </div>
           <div class="experience-content">
-            <h3 class="counter" data-target="5000">0</h3>
+            <h3> 
+            <span class="counter" data-target="5000">0</span>+
+            </h3>
             <p>Garments Delivered</p>
           </div>
         </div>
@@ -225,7 +229,9 @@
             <i class="fas fa-users"></i>
           </div>
           <div class="experience-content">
-            <h3 class="counter" data-target="1000">0</h3>
+            <h3>
+              <span class="counter" data-target="1000">0</span>+
+              </h3>
             <p>Clients Served</p>
           </div>
         </div>
@@ -238,7 +244,9 @@
             <i class="fas fa-redo"></i>
           </div>
           <div class="experience-content">
-            <h3 class="counter" data-target="85">0</h3>
+            <h3>
+              <span class="counter" data-target="85">0</span>%
+            </h3>
             <p>Repeat Clients</p>
           </div>
         </div>
@@ -251,7 +259,9 @@
             <i class="fas fa-industry"></i>
           </div>
           <div class="experience-content">
-            <h3>5+</h3>
+            <h3>
+              <span class="counter" data-target="5">0</span>+
+            </h3>
             <p>Industries Served</p>
           </div>
         </div>
@@ -264,7 +274,9 @@
             <i class="fas fa-user-tie"></i>
           </div>
           <div class="experience-content">
-            <h3>20+</h3>
+            <h3>
+              <span class="counter" data-target="20">0</span>+
+            </h3>
             <p>Expert Craftsmen</p>
           </div>
         </div>
@@ -290,7 +302,9 @@
             <i class="fas fa-check-double"></i>
           </div>
           <div class="experience-content">
-            <h3>100%</h3>
+            <h3>
+              <span class="counter" data-target="100">0</span>%
+            </h3>
             <p>Quality Assurance</p>
           </div>
         </div>
@@ -383,7 +397,7 @@
                   </div>
                   <div class="contact-details">
                     <h4>Phone</h4>
-                    <a href="tel:+923187040877">+92 318 7040877</a>
+                    <a href="tel:+923227099685">+92 322 7099685</a>
                   </div>
                 </div>
                 
@@ -403,7 +417,7 @@
                   </div>
                   <div class="contact-details">
                     <h4>WhatsApp</h4>
-                    <a href="https://wa.me/923187040877" target="_blank">Chat with us</a>
+                    <a href="https://wa.me/923227099685" target="_blank">Chat with us</a>
                   </div>
                 </div>
                 
@@ -453,7 +467,7 @@
                     </button>
                     <div class="whatsapp-cta">
                       <span>or</span>
-                      <a href="https://wa.me/923187040877" target="_blank" class="whatsapp-btn">
+                      <a href="https://wa.me/923227099685" target="_blank" class="whatsapp-btn">
                         <i class="fab fa-whatsapp me-2"></i> Message on WhatsApp
                       </a>
                     </div>
@@ -476,15 +490,17 @@
         <!-- Footer Brand Column -->
         <div class="col-lg-4 mb-4 mb-lg-0">
           <div class="footer-brand">
-            <img src="{% static 'images/logo.png' %}" alt="Talha Stitching Logo" class="footer-logo">
+            <a href="#home" class="logo-link">
+              <img src="{% static 'images/logo1.png' %}" style= "width: 200px; height: 200px;"  alt="Talha Stitching Logo" class="footer-logo animated-logo" style="max-width: 150px; height: auto;">
+            </a>
             <h3 class="footer-company-name">Talha Stitching Services</h3>
             <p class="footer-tagline">Precision Stitching for Professional Garments</p>
           </div>
           <div class="footer-social">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-            <a href="https://wa.me/923187040877" class="social-icon whatsapp-icon"><i class="fab fa-whatsapp"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/923227099685" class="social-icon whatsapp-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
           </div>
         </div>
 
@@ -492,12 +508,12 @@
         <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
           <h4 class="footer-heading">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Our Story</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" aria-label="Home">Home</a></li>
+            <li><a href="#about" aria-label="Our Story">Our Story</a></li>
+            <li><a href="#services" aria-label="Services">Services</a></li>
+            <li><a href="#experience" aria-label="Experience">Experience</a></li>
+            <li><a href="#gallery" aria-label="Gallery">Gallery</a></li>
+            <li><a href="#contact" aria-label="Contact">Contact</a></li>
           </ul>
         </div>
 
@@ -505,12 +521,12 @@
         <div class="col-lg-3 col-md-4 mb-4 mb-md-0">
           <h4 class="footer-heading">Our Services</h4>
           <ul class="footer-links">
-            <li><a href="#">Wedding Outfits</a></li>
-            <li><a href="#">Hotel Uniforms</a></li>
-            <li><a href="#">Hospital Uniforms</a></li>
-            <li><a href="#">Bulk Orders</a></li>
-            <li><a href="#">Custom Tailoring</a></li>
-            <li><a href="#">Alterations</a></li>
+            <li><a href="#" aria-label="Wedding Outfits">Wedding Outfits</a></li>
+            <li><a href="#" aria-label="Hotel Uniforms">Hotel Uniforms</a></li>
+            <li><a href="#" aria-label="Hospital Uniforms">Hospital Uniforms</a></li>
+            <li><a href="#" aria-label="Bulk Orders">Bulk Orders</a></li>
+            <li><a href="#" aria-label="Custom Tailoring">Custom Tailoring</a></li>
+            <li><a href="#" aria-label="Alterations">Alterations</a></li>
           </ul>
         </div>
 
@@ -520,19 +536,23 @@
           <ul class="footer-contact-info">
             <li>
               <i class="fas fa-map-marker-alt"></i>
-              <span>123 Stitching Street, Faisalabad, Pakistan</span>
+              <span>Talha Stitching Unit, St 09 Main bazar Usman Town, Millat Road, Faisalabad, Pakistan</span>
             </li>
             <li>
               <i class="fas fa-phone-alt"></i>
-              <a href="tel:+923187040877">+92 318 7040877</a>
+              <a href="tel:+923227099685" aria-label="Call us">+92 322 7099685</a>
             </li>
             <li>
               <i class="fas fa-envelope"></i>
-              <a href="mailto:info@talhastitching.com">info@talhastitching.com</a>
+              <a href="mailto:info@talhastitching.com" aria-label="Email us">info@talhastitching.com</a>
             </li>
             <li>
               <i class="fab fa-whatsapp"></i>
-              <a href="https://wa.me/923187040877" target="_blank">Chat on WhatsApp</a>
+              <a href="https://wa.me/923227099685" target="_blank" aria-label="Chat on WhatsApp">Chat on WhatsApp</a>
+            </li>
+            <li>
+              <i class="fas fa-clock"></i>
+              <span>Mon-Sat: 9:00 AM - 7:00 PM</span>
             </li>
           </ul>
         </div>
@@ -542,13 +562,13 @@
     <div class="footer-bottom">
       <div class="row align-items-center">
         <div class="col-md-6 text-center text-md-start">
-          <p class="copyright-text">&copy; 2025 Talha Stitching Services. All rights reserved.</p>
+          <p class="copyright-text">&copy; <span id="current-year">2025</span> Talha Stitching Services. All rights reserved.</p>
         </div>
         <div class="col-md-6 text-center text-md-end">
           <div class="footer-legal-links">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Service</a>
-            <a href="#">Sitemap</a>
+            <a href="#" aria-label="Privacy Policy">Privacy Policy</a>
+            <a href="#" aria-label="Terms of Service">Terms of Service</a>
+            <a href="#" aria-label="Sitemap">Sitemap</a>
           </div>
         </div>
       </div>
@@ -556,7 +576,7 @@
   </div>
 
   <!-- Back to Top Button -->
-  <a href="#home" class="back-to-top">
+  <a href="#home" class="back-to-top" aria-label="Back to top">
     <i class="fas fa-arrow-up"></i>
   </a>
 </footer>
