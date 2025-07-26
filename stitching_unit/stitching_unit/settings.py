@@ -139,3 +139,20 @@ EMAIL_HOST_PASSWORD = 'uyygnqkxwojhhcdj'  # NOT your Gmail password uyyg nqkx wo
 
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 CONTACT_EMAIL = 'haroonrasheed1056@gmail.com'
+
+
+COMPRESS_ENABLED = True
+COMPRESS_OFFLINE = False  # or True if you plan to precompile
+
+# Where to find static files for compression
+COMPRESS_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Where compressed files are stored
+COMPRESS_OUTPUT_DIR = 'CACHE'
+
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
+]
+
